@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+  }
+  
+header {
+  background-color: #00bfff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px;
+  z-index: 50;
+  border-bottom: solid 4px #44cbf8;
+  outline: solid 2px #02a4df;
+}
+
+
+  
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.poke-type-container{
+    font-weight: 600;
+}
+
+#type-filter{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: rgb(141, 141, 141);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px;
+    appearance: none;
+    width: 180px;
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+
+#type-filter:hover {
+    background-color: white;
+}
+
+#type-filter option {
+    background-color: #fff;
+    color: rgb(141, 141, 141);
+    padding: 8px;
+    text-align: left;
+    
+}
+
+#type-filter option:checked {
+    background-color: #ddd;
+    color: #333;
+}
+
+#search-input{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: rgb(141, 141, 141);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px 20px;
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#search-button{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f2f2f2;
+    color: rgb(141, 141, 141);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px 16px ;
+    margin-left: 14px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px;
+}
+
+#search-button:hover{
+    background-color: #dddddd;
+}
+  
+  
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 880px;
+  margin: 0 auto;
+  flex: 1 0 auto; 
+  min-height: 100vh;  /* adjust as needed */
+  box-shadow: rgb(32, 32, 32) 0px 6px 6px 6px;
+}
+
+.main{
+  background-color: #333;
+  width: 100%;
+  background-image: url(img/body_bg.png);
+}
+  
+#pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  
+}
+  
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.pokemon img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+  
+.pokemon h2 {
+  margin: 10px 0 -8px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  background-color: #c42c0a;
+  width: 100%;
+  padding: 8px 0 8px 0px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  
+}
+  /* i want to make my footer always be in the bottom of the page */
+footer {
+  flex-shrink: 0; /* prevents footer from shrinking */  
+  background-color: #E3350D;
+  color: white;
+  font-weight: 700;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 4px #fc4b23;
+  outline: solid 2px #c42c0a;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -6px 6px 0px;
+  
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: 600;
+} 
+
+footer a:visited{
+    color: #ddd;
+} 
+
+
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+.logo{
+    width: 193px;
+    height: 41;
+    
+
+
+  }

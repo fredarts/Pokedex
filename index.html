@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <header class="nav">
+
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+    </div>
+    
+    <div class="poke-type-container">
+    <label class="poke-type">Choose pokémon by type:</label>
+    <select id="type-filter">
+        <option value="">All</option>
+        <option value="normal">Normal</option>
+        <option value="fire">Fire</option>
+        <option value="fighting">Fighting</option>
+        <option value="water">Water</option>
+        <option value="flying">Flying</option>
+        <option value="grass">Grass</option>
+        <option value="poison">Poison</option>
+        <option value="electric">Electric</option>
+        <option value="ground">Ground</option>
+        <option value="psychic">Psychic</option>
+        <option value="rock">Rock</option>
+        <option value="ice">Ice</option>
+        <option value="bug">Bug</option>
+        <option value="dragon">Dragon</option>
+        <option value="ghost">Ghost</option>
+        <option value="dark">Dark</option>
+        <option value="steel">Steel</option>
+        <option value="fairy">Fairy</option>
+      </select>
+    </div>
+      <div id="search-container">
+        <input id="search-input" type="text" placeholder="your pokemon here..." />
+        <button id="search-button">Search</button>
+      </div>
+
+  </header>
+  <section class="main">
+    <main>    
+        <div id="pokemon-list">
+          <!-- Pokemon will be displayed here -->
+        </div>
+    
+    </main>
+  </section>
+  <footer>
+    <p> <a href="https://github.com/fredarts">FreDev</a> - Copyright 2022</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
